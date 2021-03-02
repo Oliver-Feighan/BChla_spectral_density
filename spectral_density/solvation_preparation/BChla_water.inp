@@ -1,0 +1,23 @@
+# All the atoms from diferent molecules will be separated at least 3.1
+# Anstroms at the solution.
+
+tolerance 3.1
+
+# The file type of input and output files is XYZ
+
+filetype xyz 
+
+# The name of the output file
+
+output water_solvated_BChla.xyz
+
+structure chromophore_01_zeroed.xyz
+  number 1
+  fixed 0. 0. 0. 0. 0. 0.
+  centerofmass
+end structure
+
+structure water.xyz
+  number 1800
+  inside box -25. -25. -25. 25. 25. 25. 
+end structure
