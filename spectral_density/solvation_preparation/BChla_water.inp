@@ -18,6 +18,6 @@ structure chromophore_01_zeroed.xyz
 end structure
 
 structure water.xyz
-  number 600
-  inside box -15. -15. -15. 15. 15. 15. 
+  number 400
+  inside box -7. -10. -15. 7. 10. 15. 
 end structure
