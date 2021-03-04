@@ -6,8 +6,8 @@ aimd(
 	gfn_ff() 
 	
 	output_steps=5 
-	n_steps=500000 
-	time_step=1 femtosecond 
+	n_steps=100000 
+	time_step=5 femtosecond 
 
 	save_to_file = true	
 	output_coordinates='gas_phase_structures'
