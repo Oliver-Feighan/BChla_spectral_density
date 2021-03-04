@@ -1,0 +1,23 @@
+aimd(
+	structure(
+		file='chromophore_01_zeroed.xyz'
+	) 
+	
+	gfn_ff() 
+	
+	output_steps=5 
+	n_steps=100000 
+	time_step=5 femtosecond 
+
+	save_to_file = true	
+	output_coordinates='gas_phase_structures'
+
+	thermostat(
+		temperature=500 kelvin
+	)	 
+
+	velocities(
+		sampling='thermal' 
+		temperature=500 kelvin
+	)
+)
