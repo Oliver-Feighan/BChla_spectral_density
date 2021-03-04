@@ -1,0 +1,12 @@
+#!/bin/bash -l
+#PBS -l walltime=10:00:00
+#PBS -N gas_phase_MD
+#PBS -j oe
+#PBS -l select=1:ncpus=24:mem=5gb
+
+export OMP_NUM_THREADS=1
+export MKL_THREADING_LAYER=TBB
+
+cd ~/BChla_spectral_density/spectral_density/MD/gas_phase
+
+~/.local/src/Qcore/release/qcore -n 10 gas_phase_MD.in > gas_phase_MD.out
